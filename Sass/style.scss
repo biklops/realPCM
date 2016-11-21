@@ -1,6 +1,17 @@
-@import "base";
-@import "mixins";
-@import "typography";
-@import "variables";
-@import "footer";
-@import "forms";
+/*
+Theme Name: PCM
+Theme URI: http://www.biklops.com
+Author: BKLOPS
+Author URI: http://biklops.com
+Description: The world is but an illusion
+Template: Enfold
+Version: 1.0
+Text Domain: pcm
+*/
+
+@import "_partials/base";
+@import "_partials/forms";
+@import "_partials/mixins";
+@import "_partials/typography";
+@import "_partials/variables";
+@import "_layout/footer";

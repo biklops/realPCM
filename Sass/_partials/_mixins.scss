@@ -1,0 +1,10 @@
+@mixin gradient {
+    background: rgb(28, 166, 80);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(28, 166, 80, 1) 0%, rgba(165, 207, 58, 1) 50%, rgba(253, 233, 45, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(28, 166, 80, 1) 0%, rgba(165, 207, 58, 1) 50%, rgba(253, 233, 45, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(28, 166, 80, 1) 0%, rgba(165, 207, 58, 1) 50%, rgba(253, 233, 45, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
