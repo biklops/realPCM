@@ -10,8 +10,11 @@ Text Domain: pcm
 */
 
 @import "_partials/base";
-@import "_partials/forms";
-@import "_partials/mixins";
-@import "_partials/typography";
 @import "_partials/variables";
+@import "_partials/mixins";
+@import "_partials/forms";
+@import "_partials/typography";
+@import "_layout/nav";
 @import "_layout/footer";
+@import "_partials/sections";
+@import "_pages/about";

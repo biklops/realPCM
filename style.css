@@ -9,14 +9,78 @@ Version: 1.0
 Text Domain: pcm
 */
 /* line 1, Sass/_partials/_base.scss */
+div .logo {
+  float: left;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  max-width: 150px; }
+
+/* line 10, Sass/_partials/_base.scss */
 .html_stretched #wrap_all {
   background-color: transparent !important; }
 
+/* line 14, Sass/_partials/_base.scss */
+#main,
+.avia-msie-8 #header.av_header_sticky_disabled {
+  background-color: transparent; }
+
+/* line 14, Sass/_partials/_typography.scss */
+p {
+  color: #4A4A4A;
+  font-size: 18px;
+  font-family: haptic-medium, sans-serif; }
+
+/* line 21, Sass/_partials/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: haptic-medium, haptic-medium, sans-serif; }
+
+/* line 29, Sass/_partials/_typography.scss */
+.main_color h1 {
+  font-family: haptic-medium, haptic-medium, sans-serif;
+  color: #10B5E5;
+  font-size: 3rem; }
+
+/* line 36, Sass/_partials/_typography.scss */
+#cta-strip p {
+  color: white;
+  font-size: 1.85rem; }
+
+@media only screen and (max-width: 2600px) {
+  /* line 2, Sass/_layout/_nav.scss */
+  .html_mobile_menu_tablet .container #advanced_menu_toggle,
+  .html_mobile_menu_tablet #advanced_menu_hide {
+    display: block; }
+
+  /* line 6, Sass/_layout/_nav.scss */
+  .responsive .av_mobile_menu_tablet .main_menu {
+    display: none; }
+
+  /* line 9, Sass/_layout/_nav.scss */
+  .html_mobile_menu_tablet #mobile-advanced {
+    display: block;
+    width: 20%;
+    right: -20%; } }
+@media only screen and (min-width: 1024px) {
+  /* line 17, Sass/_layout/_nav.scss */
+  nav.main_menu {
+    display: none !important; }
+
+  /* line 20, Sass/_layout/_nav.scss */
+  #advanced_menu_toggle,
+  #advanced_menu_hide {
+    display: block !important; } }
 /* line 1, Sass/_layout/_footer.scss */
 .container_wrap {
-  z-index: 0; }
+  z-index: 1;
+  background-color: transparent; }
 
-/* line 5, Sass/_layout/_footer.scss */
+/* line 6, Sass/_layout/_footer.scss */
 #footer {
   background: #1ca650;
   /* Old browsers */
@@ -27,9 +91,48 @@ Text Domain: pcm
   background: linear-gradient(135deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   z-index: -9999;
-  position: relative; }
+  position: relative;
+  bottom: 0;
+  height: 500px; }
 
-/* line 11, Sass/_layout/_footer.scss */
+/* line 14, Sass/_layout/_footer.scss */
 #footer .container {
+  font-size: 18px;
   position: fixed;
-  z-index: -9998; }
+  bottom: 100px;
+  width: 75%;
+  left: 50%;
+  margin-left: -37.5%; }
+
+/* line 24, Sass/_layout/_footer.scss */
+#footer .container p {
+  color: white; }
+
+/* line 1, Sass/_partials/_sections.scss */
+#cta-strip {
+  background-color: #4C4C4C;
+  color: white; }
+
+/* line 6, Sass/_partials/_sections.scss */
+#cta-strip p {
+  color: white; }
+
+/* line 1, Sass/_pages/_about.scss */
+#about-sec1 .avia_textblock {
+  transform: translate(-30%, 30%); }
+
+/* line 5, Sass/_pages/_about.scss */
+#about-sec2 {
+  transform: translate(0%, -20%); }
+
+/* line 9, Sass/_pages/_about.scss */
+#about-sec3 {
+  transform: translate(0%, -30%); }
+
+/* line 13, Sass/_pages/_about.scss */
+#about-sec3 .avia_textblock {
+  padding-top: 20%; }
+
+/* line 18, Sass/_pages/_about.scss */
+#about-sec3 img {
+  transform: translate(-50%, 0); }

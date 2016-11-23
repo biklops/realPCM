@@ -1,0 +1,39 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+// Base Font
+$base-font-family: haptic-medium,
+sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 18px;
+$base-line-height: 1.4;
+//Fonts
+$header-font: haptic-medium;
+//Body
+p {
+    color: $text-grey;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+}
+
+//Headers
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $header-font, $base-font-family;
+}
+
+.main_color h1 {
+    font-family: $header-font, $base-font-family;
+    color: #10B5E5;
+    font-size: 3rem;
+}
+
+//Special Sections
+#cta-strip p {
+    color: white;
+    font-size: 1.85rem;
+}

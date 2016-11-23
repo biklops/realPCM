@@ -1,3 +1,17 @@
+div .logo {
+    float: left;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    max-width: 150px;
+}
+
 .html_stretched #wrap_all {
     background-color: transparent !important;
+}
+
+#main,
+.avia-msie-8 #header.av_header_sticky_disabled {
+    background-color: transparent;
 }

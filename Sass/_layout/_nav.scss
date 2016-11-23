@@ -1,0 +1,24 @@
+@media only screen and (max-width: 2600px) {
+    .html_mobile_menu_tablet .container #advanced_menu_toggle,
+    .html_mobile_menu_tablet #advanced_menu_hide {
+        display: block;
+    }
+    .responsive .av_mobile_menu_tablet .main_menu {
+        display: none;
+    }
+    .html_mobile_menu_tablet #mobile-advanced {
+        display: block;
+        width: 20%;
+        right: -20%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav.main_menu {
+        display: none !important;
+    }
+    #advanced_menu_toggle,
+    #advanced_menu_hide {
+        display: block !important;
+    }
+}
