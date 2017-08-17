@@ -4,9 +4,9 @@
     z-index: -9999;
     position: relative;
     bottom: 0;
-    // height: 400px;
     align-items: center;
     border: none;
+    text-transform: uppercase;
 
     .container {
         @include flex;
@@ -69,15 +69,22 @@
 
 .footermenu {
     @include flex;
-    width: 100%;
+    width: 80% !important;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto !important;
     li {
         flex-flow: row;
         flex: 1 1 100%;
         text-align: center;
         text-transform: uppercase;
         font-weight: 800;
+        a {
+            font-size: $unit*2 !important;
+        }
     }
+
 }
 
 
@@ -85,33 +92,37 @@
     @include flex;
     margin: $unit*2 0 0;
     overflow: auto;
-    line-height: $unit*2;
+    line-height: $unit*1.5;
     text-align: center;
+
     @media only screen and (max-width: $phone-size) {
         align-items: center;
         justify-content: center;
         flex-flow: wrap;
     }
     .cityname {
-        font-weight: 800;}
+        font-weight: 800;
+        }
     a {
         width: 50%;
         margin-bottom: $unit;
+        font-size: $unit*1;
         @media only screen and (max-width: $phone-size) {
             flex-flow: column;
             font-size: $unit*.85 !important; 
             width: 100%;
             line-height: $unit; 
         }
-        
     }
-    
 }
 
 .footeremail {
-    margin-top: $unit*2;
+    margin-top: $unit*1;
     text-align: center;
-    line-height: $unit*2;
+    line-height: $unit*1.25;
+    a {
+       font-size: $unit !important; 
+    }
     @media only screen and (max-width: $phone-size) {
         line-height: $unit;
         margin-top: $unit;
@@ -120,6 +131,7 @@
         font-weight: 800;
         display: block;
         margin-top: $unit*.5;
+        font-size: $unit*1.5;
     }
 }
 
