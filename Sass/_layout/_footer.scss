@@ -1,26 +1,185 @@
-.container_wrap {
-    z-index: 1;
-    background-color: transparent;
-}
-
 #footer {
     @include gradient;
+    @include flex;
     z-index: -9999;
     position: relative;
     bottom: 0;
-    height: 500px;
+    // height: 400px;
+    align-items: center;
+    border: none;
+
+    .container {
+        @include flex;
+        position: fixed;
+        bottom: 121px;
+        flex-grow: 1;
+        margin: auto;
+        padding-top: 150px;
+        left: 0;
+        right: 0;
+        align-items: center;
+        @media only screen and (max-width: 375px) {
+            display: block;
+            text-align: center;
+        }
+        .widget {
+            @media only screen and (max-width: 375px) {
+            margin-top: 0;}
+        }
+        }
+
+
+        div {
+            @media only screen and (max-width: $phone-size) {
+                display: none;
+            }
+        }
+        div:last-of-type {
+            @media only screen and (max-width: $phone-size) {
+                display: block;
+                width: 100%;
+            }
+        }
+        a {
+            display: inline-block;
+            padding-bottom: 1px;
+            margin: 5px 0px 5px;
+            letter-spacing: 1px;
+            font-size: $unit*1.5;
+            color: white;
+            transition: border 500ms ease;
+            &:hover {
+                text-decoration: none;
+                opacity: .85;
+            }
+            @media only screen and (max-width: $phone-size) {
+                font-size: $unit*1 !important;
+                text-align: center;
+            }
+            @media only screen and (max-width: $pad-size) {
+                font-size: $unit*1.5;
+                text-align: center;
+            }
+        }
+
+    }
+
+// End of #footer
+
+
+.footermenu {
+    @include flex;
+    width: 100%;
+    flex-direction: row;
+    li {
+        flex-flow: row;
+        flex: 1 1 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
 }
 
-#footer .container {
-    font-size: 18px;
-    position: fixed;
-    bottom: 100px;
-    width: 75%;
 
-left: 50%;
-margin-left: -37.5%;
+#footerphonesection {
+    @include flex;
+    margin: $unit*2 0 0;
+    overflow: auto;
+    line-height: $unit*2;
+    text-align: center;
+    @media only screen and (max-width: $phone-size) {
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .cityname {
+        font-weight: 800;}
+    a {
+        width: 50%;
+        margin-bottom: $unit;
+        @media only screen and (max-width: $phone-size) {
+            flex-flow: column;
+            font-size: $unit*.85 !important; 
+            width: 100%;
+            line-height: $unit; 
+        }
+        
+    }
+    
 }
 
-#footer .container p {
+.footeremail {
+    margin-top: $unit*2;
+    text-align: center;
+    line-height: $unit*2;
+    @media only screen and (max-width: $phone-size) {
+        line-height: $unit;
+        margin-top: $unit;
+    }
+    span {
+        font-weight: 800;
+        display: block;
+        margin-top: $unit*.5;
+    }
+}
+
+#nav_menu-2 li:first-of-type {
+    display: none;
+}
+
+#top #footer .widget_nav_menu li {
+    margin-bottom: $unit*.5;
+    text-align: center;
+}
+
+.widget_nav_menu .current-menu-item>a,
+.widget_nav_menu .current_page_item>a {
+    font-weight: $regular;
+}
+
+#socket {
+    @include flex;
+    background-color: #313131;
     color: white;
+    height: $unit*4;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 100;
+    bottom: 0px;
+    z-index: 0;
+    width: 100%;
+    position: fixed;
+    border-top: rgba(174, 255, 114, 0.7) 1px solid;
+    .sub_menu_socket {
+        display: none;
+    }
+    @media only screen and (max-width: $phone-size) {
+        display: none;
+    }
+}
+
+.footer_color section,
+.footer_color span,
+#top .footer_color .pullquote_boxed,
+.responsive #top .footer_color .avia-testimonial,
+.responsive #top.avia-blank #main .footer_color.container_wrap:first-child,
+#top .footer_color.fullsize .template-blog .post_delimiter,
+.footer_color .related_posts.av-related-style-full a {
+    overflow: visible !important;
+}
+
+#footer .menu {
+    position: static;
+    height: auto;
+}
+
+#footer #nav_menu-2 {
+    // margin-top: $unit;
+    // background-color: red;
+    overflow: auto;
+}
+
+//Fix the contact link from breaking through div container
+#footer div .av_one_third {
+    // word-wrap: break-word; /* Internet Explorer 5.5+ */
 }

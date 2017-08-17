@@ -1,20 +1,286 @@
-#about-sec1 .avia_textblock {
-    transform: translate(-30%, 30%);
+/*
+// Responsive Fixes
+*/
+
+body.about div {
+    @media (max-width: $phone-size) {
+        flex-flow: column;
+        text-align: center;
+    }
+}
+
+body.about .avia-image-container.avia-align-left {
+    @media (max-width: $phone-size) {
+        margin-right: 0;
+    }
+}
+
+
+/*
+//English-to Japanese Transistion
+*/
+
+#about-hero {
+    padding-top: $unit*5;
+    @media screen and (max-width: $phone-size) {
+        padding-top: 0px;
+    }
+    h1 {
+        text-transform: none !important;
+        margin-bottom: $unit;
+        @media screen and (max-width: $phone-size) {
+        margin-bottom: $unit*2;
+        }
+    }
+    .p-like {
+        margin-bottom: $unit;
+        display: block;
+    }
+    a {
+        font-size: $unit;
+        line-height: $unit*1.5;
+        max-width: 800px;
+        font-weight: $light;
+        text-align: center;
+        color: $text-grey;
+        margin: 20px auto;
+        display: block;
+        opacity: 100;
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        &:before {
+            content: attr(data-hover);
+            display: block;
+            height: 0;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+        br {
+            margin: $unit 0;
+        }
+        &:hover {
+            text-decoration: none;
+            [lang=en] {
+                opacity: 0;
+                transition: all .4s ease;
+            }
+            &:before {
+                content: attr(data-hover);
+                opacity: 100;
+                display: block;
+            }
+        }
+    }
+}
+
+// this one is for body English-to-Japanese rollovers
+.lang-swap {
+    // padding-top: $unit*5;
+    h1 {
+        text-transform: none !important;
+        margin-bottom: $unit;
+    }
+    .p-like {
+        margin-bottom: $unit;
+        display: block;
+        color: $text-grey;
+        @media (max-width: 700px) {
+            text-align: center;
+        }
+    }
+    .h3-like {
+        margin-top: -$unit;
+        color: red;
+    }
+    a {
+        font-size: $unit;
+        line-height: $unit*1.5;
+        max-width: 800px;
+        font-weight: $light; // text-align: center;
+        color: $sub-head-grey; // margin: 20px auto;
+        display: block;
+        opacity: 100;
+        transition: all .5s ease;
+        position: relative;
+        overflow: hidden; // margin: 0 auto;
+        &:before {
+            content: attr(data-hover); // white-space: pre;
+            display: block;
+            height: 0;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+        br {
+            margin: $unit 0;
+        }
+        &:hover {
+            text-decoration: none;
+            [lang=en] {
+                opacity: 0;
+                transition: all .4s ease;
+                color: $text-grey;
+            }
+            &:before {
+                content: attr(data-hover);
+                opacity: 100;
+                display: block;
+                color: $text-grey;
+            }
+        }
+    }
+}
+
+//Sections
+body.about .body-blobs-wrap {
+    z-index: 1;
+}
+
+#about-hero {
+    background: transparent;
+}
+
+#about-sec1 {
+    background: transparent;
+    span {
+        text-align: left;
+        @media screen and (max-width: $phone-size) {
+            text-align: center;
+        }
+    }
+}
+
+#about-sec1 .avia-builder-el-last {
+    background: transparent; // transform: translate(-30%, 0%);
+    margin-left: 5px;
 }
 
 #about-sec2 {
-    transform: translate(0%, -20%);
+    transform: translate(-9%, -20%);
+    z-index: 9999;
+    background: transparent;
+    @media (max-width: $phone-size) {
+        transform: none;
+    }
+    span {
+        text-align: center;
+    }
 }
 
 #about-sec3 {
-    transform: translate(0%, -30%);
+    transform: translate(-10%, -50%);
+    min-height: 500px;
+    background: transparent;
+    @media (max-width: $phone-size) {
+        transform: none;
+    }
 }
 
-#about-sec3 .avia_textblock {
-    padding-top: 20%;
-    //note: vertically center this!
+#about-sec3 .entry-content-wrapper {
+    @include flex;
+    align-items: center;
+    @media (max-width: $phone-size) {
+        flex-flow: column;
+    }
 }
 
-#about-sec3 img {
-    transform: translate(-50%, 0);
+#about-sec3 .avia-builder-el-last {
+    margin-left: 0px;
+}
+
+#about-sec4 {
+    transform: translate(0%, -80%);
+    min-height: 500px;
+    background: transparent;
+    @media (max-width: $phone-size) {
+        transform: none;
+    }
+    span {
+        text-align: right;
+        @media screen and (max-width: $phone-size) {
+            text-align: center;
+        }
+    }
+    h2,
+    h5 {
+        @media screen and (max-width: $phone-size) {
+            text-align: center !important;
+        }
+    }
+}
+
+#about-sec4.desktop-only {
+    // background-color: green;
+    @media (max-width: $phone-size) {
+        display: none;
+    }
+}
+
+#about-sec4.mobile-only {
+    // background-color: red;
+    @media (min-width: $phone-size) {
+        display: none;
+    }
+}
+
+#about-sec4 .entry-content-wrapper {
+    @include flex;
+    align-items: center;
+    .avia-builder-el-last {
+        margin-left: $unit;
+    }
+}
+
+#about-sec5 {
+    transform: translate(1%, -85%);
+    min-height: 500px;
+    background: transparent;
+    margin-bottom: -550px;
+    @media (max-width: $phone-size) {
+        transform: none;
+        margin-bottom: -50px;
+    }
+}
+
+#about-sec5 .entry-content-wrapper {
+    @include flex;
+    align-items: top;
+    .avia-builder-el-last {
+        margin-left: $unit;
+        margin-top: $unit;
+    }
+}
+
+#after_section_6 {
+    border-top: none;
+    background: transparent;
+}
+
+#after_section_7 {
+    border-top: none;
+    // background: transparent;
+}
+
+.clearfix::before,
+.clearfix::after,
+.flex_column::before,
+.flex_column::after,
+.widget::before,
+.widget::after {
+    display: flex;
+    align-items: center;
+}
+
+.page-id-12 h2 {
+    // font-size: $large;
+    font-weight: $ultralight;
+    text-transform: lowercase !important;
+    text-transform: capitalize !important;
+    margin-bottom: 0px;
+}
+
+// Moving Footer Up
+.page-id-12 #footer {
+    // margin-top: -500px;
 }

@@ -5,16 +5,24 @@ Author: BKLOPS
 Author URI: http://biklops.com
 Description: The world is but an illusion
 Template: Enfold
-Version: 1.0
+Version: 1.2.4.1
 Text Domain: pcm
 */
 
 @import "_partials/base";
 @import "_partials/variables";
 @import "_partials/mixins";
-@import "_partials/forms";
 @import "_partials/typography";
+@import "_partials/forms";
+
 @import "_layout/nav";
 @import "_layout/footer";
 @import "_partials/sections";
+@import "_pages/_home";
 @import "_pages/about";
+@import "_pages/work";
+@import "_pages/contact";
+@import "_pages/popup";
+
+@import "_partials/blobs";
+@import "_partials/menu"; 

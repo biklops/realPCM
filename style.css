@@ -5,134 +5,1450 @@ Author: BKLOPS
 Author URI: http://biklops.com
 Description: The world is but an illusion
 Template: Enfold
-Version: 1.0
+Version: 1.2.4.1
 Text Domain: pcm
 */
-/* line 1, Sass/_partials/_base.scss */
-div .logo {
-  float: left;
-  left: 0;
-  position: absolute;
-  z-index: 1;
-  margin-top: 20px;
-  max-width: 150px; }
+/* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_base.scss */
+* {
+  box-sizing: border-box; }
 
-/* line 10, Sass/_partials/_base.scss */
-.html_stretched #wrap_all {
-  background-color: transparent !important; }
+/* line 25, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_base.scss */
+html {
+  height: 100%; }
 
-/* line 14, Sass/_partials/_base.scss */
-#main,
-.avia-msie-8 #header.av_header_sticky_disabled {
-  background-color: transparent; }
+@font-face {
+  font-family: 'HelveticaNeueUltraLight';
+  src: url("HelveticaNeueUltraLight.ttf") format(truetype); }
 
-/* line 14, Sass/_partials/_typography.scss */
+/* line 10, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+body {
+  font-size: 20px;
+  line-height: 30px; }
+
+/* line 36, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+.template-page .entry-content-wrapper h1,
+.template-page .entry-content-wrapper h2 {
+  letter-spacing: -1px;
+  text-transform: none; }
+
+/* line 43, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
 p {
-  color: #4A4A4A;
-  font-size: 18px;
-  font-family: haptic-medium, sans-serif; }
+  color: #4a4a4a;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
 
-/* line 21, Sass/_partials/_typography.scss */
+/* line 50, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
 h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: haptic-medium, haptic-medium, sans-serif; }
+h5,
+.main_color h2,
+.main_color h3,
+.main_color h4,
+.main_color h5 {
+  font-family: "HelveticaNeueUltraLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Arial", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  color: #10b5e5; }
 
-/* line 29, Sass/_partials/_typography.scss */
+@media (max-width: 992px) {
+  /* line 65, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+  h1 {
+    margin-top: 40px; } }
+
+/* line 71, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
 .main_color h1 {
-  font-family: haptic-medium, haptic-medium, sans-serif;
+  font-family: "HelveticaNeueUltraLight", "HelveticaNeue-Ultra-Light", "Helvetica Neue Ultra Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Arial", sans-serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #10B5E5;
-  font-size: 3rem; }
+  letter-spacing: -2px;
+  font-size: 65px;
+  line-height: 65px;
+  text-transform: lowercase !important;
+  text-transform: capitalize !important;
+  margin-bottom: 40px; }
 
-/* line 36, Sass/_partials/_typography.scss */
+/* line 82, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h2 {
+  font-size: 60px;
+  line-height: 50px;
+  margin-bottom: 5px !important; }
+
+/* line 88, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h3 {
+  font-size: 25px;
+  letter-spacing: 1px; }
+
+/* line 93, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h5 {
+  font-size: 20px; }
+
+/* line 98, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_typography.scss */
 #cta-strip p {
   color: white;
   font-size: 1.85rem; }
 
+/* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+#top form {
+  border: 1px solid;
+  border-color: #4a4a4a;
+  margin-bottom: 200px;
+  padding: 30px; }
+  @media only screen and (max-width: 768px) {
+    /* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+    #top form {
+      padding: 20px;
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 20px; } }
+
+/* line 15, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+#top fieldset {
+  margin-bottom: 0px;
+  max-width: 100%; }
+  @media only screen and (max-width: 768px) {
+    /* line 15, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+    #top fieldset {
+      min-width: 100%; } }
+
+/* line 23, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+#top .avia_ajax_form .text_input,
+#top .avia_ajax_form .select,
+#top .avia_ajax_form .text_area {
+  border-radius: 0px; }
+
+/* line 29, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+#top .main_color .input-text,
+#top .main_color input[type="text"],
+#top .main_color input[type="input"],
+#top .main_color input[type="password"],
+#top .main_color input[type="email"],
+#top .main_color input[type="number"],
+#top .main_color input[type="url"],
+#top .main_color input[type="tel"],
+#top .main_color input[type="search"],
+#top .main_color textarea,
+#top .main_color select {
+  background-color: white;
+  border-color: #4a4a4a;
+  color: #4a4a4a;
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* line 47, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+.contact-page form {
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto; }
+  @media only screen and (min-device-width: 375px) {
+    /* line 47, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+    .contact-page form {
+      max-width: 100%; } }
+  /* line 54, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+  .contact-page form input {
+    color: #9B9B9B !important; }
+  /* line 58, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+  .contact-page form input.button {
+    margin: 0 auto;
+    display: block;
+    width: 240px;
+    background-color: #10b5e5;
+    border: none;
+    color: white !important;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding: 10px;
+    font-weight: 100;
+    max-width: 80%; }
+    @media only screen and (max-width: 768px) {
+      /* line 58, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+      .contact-page form input.button {
+        margin: 20px 0 0;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%; } }
+    /* line 77, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_forms.scss */
+    .contact-page form input.button:hover {
+      opacity: .70;
+      background-color: #10b5e5; }
+
 @media only screen and (max-width: 2600px) {
-  /* line 2, Sass/_layout/_nav.scss */
+  /* line 2, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
   .html_mobile_menu_tablet .container #advanced_menu_toggle,
   .html_mobile_menu_tablet #advanced_menu_hide {
     display: block; }
-
-  /* line 6, Sass/_layout/_nav.scss */
+  /* line 6, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
   .responsive .av_mobile_menu_tablet .main_menu {
     display: none; }
-
-  /* line 9, Sass/_layout/_nav.scss */
+  /* line 9, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
   .html_mobile_menu_tablet #mobile-advanced {
     display: block;
     width: 20%;
     right: -20%; } }
+
 @media only screen and (min-width: 1024px) {
-  /* line 17, Sass/_layout/_nav.scss */
+  /* line 17, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
   nav.main_menu {
     display: none !important; }
-
-  /* line 20, Sass/_layout/_nav.scss */
+  /* line 20, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
   #advanced_menu_toggle,
   #advanced_menu_hide {
     display: block !important; } }
-/* line 1, Sass/_layout/_footer.scss */
-.container_wrap {
-  z-index: 1;
-  background-color: transparent; }
 
-/* line 6, Sass/_layout/_footer.scss */
+/* line 26, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+.avia-menu-text {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: bold; }
+
+/* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
 #footer {
   background: #1ca650;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: -9999;
   position: relative;
   bottom: 0;
-  height: 500px; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none; }
+  /* line 11, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  #footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 121px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: auto;
+    padding-top: 150px;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media only screen and (max-width: 375px) {
+      /* line 11, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+      #footer .container {
+        display: block;
+        text-align: center; } }
+    @media only screen and (max-width: 375px) {
+      /* line 25, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+      #footer .container .widget {
+        margin-top: 0; } }
+  @media only screen and (max-width: 768px) {
+    /* line 32, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    #footer div {
+      display: none; } }
+  @media only screen and (max-width: 768px) {
+    /* line 37, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    #footer div:last-of-type {
+      display: block;
+      width: 100%; } }
+  /* line 43, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  #footer a {
+    display: inline-block;
+    padding-bottom: 1px;
+    margin: 5px 0px 5px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    transition: border 500ms ease; }
+    /* line 51, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    #footer a:hover {
+      text-decoration: none;
+      opacity: .85; }
+    @media only screen and (max-width: 768px) {
+      /* line 43, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+      #footer a {
+        font-size: 20px !important;
+        text-align: center; } }
+    @media only screen and (max-width: 992px) {
+      /* line 43, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+      #footer a {
+        font-size: 30px;
+        text-align: center; } }
 
-/* line 14, Sass/_layout/_footer.scss */
-#footer .container {
-  font-size: 18px;
+/* line 70, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.footermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  /* line 74, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  .footermenu li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800; }
+
+/* line 84, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footerphonesection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0;
+  overflow: auto;
+  line-height: 40px;
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    /* line 84, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    #footerphonesection {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap; } }
+  /* line 95, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  #footerphonesection .cityname {
+    font-weight: 800; }
+  /* line 97, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  #footerphonesection a {
+    width: 50%;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 768px) {
+      /* line 97, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+      #footerphonesection a {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        font-size: 17px !important;
+        width: 100%;
+        line-height: 20px; } }
+
+/* line 111, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.footeremail {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 40px; }
+  @media only screen and (max-width: 768px) {
+    /* line 111, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    .footeremail {
+      line-height: 20px;
+      margin-top: 20px; } }
+  /* line 119, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  .footeremail span {
+    font-weight: 800;
+    display: block;
+    margin-top: 10px; }
+
+/* line 126, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#nav_menu-2 li:first-of-type {
+  display: none; }
+
+/* line 130, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#top #footer .widget_nav_menu li {
+  margin-bottom: 10px;
+  text-align: center; }
+
+/* line 135, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.widget_nav_menu .current-menu-item > a,
+.widget_nav_menu .current_page_item > a {
+  font-weight: 300; }
+
+/* line 140, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#socket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #313131;
+  color: white;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 100;
+  bottom: 0px;
+  z-index: 0;
+  width: 100%;
   position: fixed;
-  bottom: 100px;
-  width: 75%;
-  left: 50%;
-  margin-left: -37.5%; }
+  border-top: rgba(174, 255, 114, 0.7) 1px solid; }
+  /* line 153, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+  #socket .sub_menu_socket {
+    display: none; }
+  @media only screen and (max-width: 768px) {
+    /* line 140, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+    #socket {
+      display: none; } }
 
-/* line 24, Sass/_layout/_footer.scss */
-#footer .container p {
-  color: white; }
+/* line 161, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.footer_color section,
+.footer_color span,
+#top .footer_color .pullquote_boxed,
+.responsive #top .footer_color .avia-testimonial,
+.responsive #top.avia-blank #main .footer_color.container_wrap:first-child,
+#top .footer_color.fullsize .template-blog .post_delimiter,
+.footer_color .related_posts.av-related-style-full a {
+  overflow: visible !important; }
 
-/* line 1, Sass/_partials/_sections.scss */
+/* line 171, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footer .menu {
+  position: static;
+  height: auto; }
+
+/* line 176, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footer #nav_menu-2 {
+  overflow: auto; }
+
+/*
+*   Logo
+*/
+/* line 7, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+div .logo {
+  float: left;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 40px;
+  max-width: 239px;
+  position: absolute;
+  z-index: 9999; }
+  @media only screen and (max-width: 767px) {
+    /* line 7, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+    div .logo {
+      margin-top: 15px;
+      width: 50% !important;
+      margin-left: 10px;
+      margin-bottom: 10px; } }
+
+/* line 23, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#header {
+  height: 140px; }
+
+/*
+*   Responsive Container 
+*/
+@media only screen and (min-width: 768px) {
+  /* line 32, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  .container {
+    padding-top: 80px; } }
+
+/*
+*   Reel
+*/
+/* line 42, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.av-video-service-youtube .av-click-overlay {
+  display: none; }
+
+/* line 46, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.av-click-overlay {
+  z-index: 0; }
+
+/* line 50, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.ytp-large-play-button {
+  display: none !important; }
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  /* line 55, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  #main .content {
+    padding-top: 0px; } }
+
+/* line 61, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
 #cta-strip {
-  background-color: #4C4C4C;
+  background-color: #4a4a4a;
   color: white; }
 
-/* line 6, Sass/_partials/_sections.scss */
+/* line 66, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
 #cta-strip p {
   color: white; }
 
-/* line 1, Sass/_pages/_about.scss */
-#about-sec1 .avia_textblock {
-  transform: translate(-30%, 30%); }
+/* line 71, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.ajax_previous,
+.ajax_next {
+  display: none !important; }
 
-/* line 5, Sass/_pages/_about.scss */
+/* line 76, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.ajax_controlls a {
+  width: 120px;
+  height: 118px;
+  margin-top: 1px; }
+
+/* line 82, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.avia_close {
+  background: transparent;
+  border: none !important; }
+
+/* line 87, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+[data-av_icon]::before {
+  background-color: #f8f8f8;
+  color: #4a4a4a;
+  width: 40px;
+  width: 120px;
+  height: 120px;
+  display: block;
+  font-size: 60px;
+  padding-top: 30px; }
+
+/* line 98, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+div.avia-popup .mfp-close:hover {
+  border: none !important; }
+
+/* line 103, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#scroll-top-link {
+  display: none; }
+
+/* line 108, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.image-overlay {
+  visibility: hidden; }
+
+/* line 112, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.avia_transform a:hover .image-overlay {
+  opacity: 0.2 !important; }
+
+/* line 116, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.image-overlay .image-overlay-inside:before {
+  display: none; }
+
+/* line 120, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.html_stretched #wrap_all {
+  background-color: transparent !important; }
+
+/* line 124, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#main,
+.avia-msie-8 #header.av_header_sticky_disabled {
+  background-color: transparent; }
+
+/*
+* LOCATIONS BLOCKS
+*/
+/* line 134, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 540px; }
+  @media only screen and (max-width: 900px) {
+    /* line 134, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+    #locations {
+      height: auto;
+      display: block; } }
+  /* line 141, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  #locations .avia-button {
+    min-width: 250px;
+    background-color: transparent;
+    font-size: 40px;
+    border: 4px solid white !important;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.7) !important; }
+    /* line 24, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_mixins.scss */
+    #locations .avia-button span {
+      text-shadow: 1px 2px rgba(0, 0, 0, 0.5) !important;
+      font-weight: 200; }
+
+/* line 148, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#locations .flex_cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex !important;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 540px;
+  background-size: cover !important;
+  border: 8px solid #10b5e5;
+  float: left; }
+  /* line 159, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  #locations .flex_cell.kc {
+    border-right: 2px solid #10b5e5; }
+  /* line 162, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  #locations .flex_cell .flex_cell_inner {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+
+/*
+// 'NASCAR' Blocks
+*/
+/* line 172, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#top .avia-logo-grid .slide-entry-wrap {
+  margin-bottom: 10px; }
+
+/* line 177, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.logos h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 200; }
+
+@media (max-width: 768px) {
+  /* line 176, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  .logos {
+    -webkit-transform: none;
+            transform: none; } }
+
+/* line 185, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.logos .slide-entry-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 768px) {
+    /* line 185, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+    .logos .slide-entry-wrap {
+      width: 100%; } }
+  /* line 192, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  .logos .slide-entry-wrap .slide-entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 768px) {
+      /* line 192, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+      .logos .slide-entry-wrap .slide-entry {
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 25%;
+                flex: 1 1 25%;
+        margin: 0 10px 20px !important;
+        position: relative;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    /* line 205, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+    .logos .slide-entry-wrap .slide-entry img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+/* line 212, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#top .avia-smallarrow-slider .slide-image,
+#top .avia-logo-element-container img {
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 80px;
+  width: auto;
+  height: auto; }
+
+/*
+// Pagination on Portfolio items
+*/
+/* line 226, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#top .pagination .current,
+#top .pagination a,
+#top .fullsize .template-blog .pagination a {
+  float: left;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  padding: 0;
+  border-radius: 100px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  color: #4a4a4a; }
+  /* line 239, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+  #top .pagination .current:hover,
+  #top .pagination a:hover,
+  #top .fullsize .template-blog .pagination a:hover {
+    background-color: #10b5e5;
+    color: white; }
+
+/* line 246, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.main_color .rounded-container:hover, #top .main_color .pagination a:hover:hover, .main_color .small-preview:hover, .main_color .fallback-post-type-icon:hover {
+  background-color: #10b5e5;
+  color: white; }
+
+/* line 252, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#top .pagination .current {
+  background: #4a4a4a;
+  color: white; }
+
+/*
+*   Client Preview Pages logo overlap fix
+*/
+/* line 262, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+.client-preview .container {
+  padding-top: 120px; }
+
+/* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+.html_stretched .home #wrap_all {
+  background-color: white !important; }
+
+@media only screen and (max-width: 768px) {
+  /* line 5, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+  .hero-video {
+    display: none; } }
+
+/* line 11, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+#mobile-video {
+  display: none;
+  padding-top: 80px;
+  min-height: auto; }
+  @media only screen and (max-width: 768px) {
+    /* line 11, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+    #mobile-video {
+      display: block;
+      padding-top: 0; } }
+  @media only screen and (max-width: 768px) {
+    /* line 19, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+    #mobile-video .content {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important; } }
+  @media only screen and (max-width: 768px) {
+    /* line 25, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+    #mobile-video .container {
+      max-width: 100% !important;
+      width: 100% !important;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+      background: yellow;
+      margin: 0;
+      height: auto; } }
+  /* line 36, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+  #mobile-video .avia-iframe-wrap {
+    margin-bottom: 0px; }
+  /* line 39, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+  #mobile-video .avia-video {
+    margin-bottom: 0px; }
+
+@media only screen and (max-width: 768px) {
+  /* line 44, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+  .home #main .content {
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+
+/* line 53, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+.home .mobile-only {
+  display: none; }
+  /* line 55, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+  .home .mobile-only h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px; }
+  @media (max-width: 768px) {
+    /* line 53, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_home.scss */
+    .home .mobile-only {
+      display: block; } }
+
+/*
+// Responsive Fixes
+*/
+@media (max-width: 768px) {
+  /* line 5, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  body.about div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  /* line 12, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  body.about .avia-image-container.avia-align-left {
+    margin-right: 0; } }
+
+/*
+//English-to Japanese Transistion
+*/
+/* line 23, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-hero {
+  padding-top: 100px; }
+  @media screen and (max-width: 768px) {
+    /* line 23, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-hero {
+      padding-top: 0px; } }
+  /* line 28, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-hero h1 {
+    text-transform: none !important;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      /* line 28, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+      #about-hero h1 {
+        margin-bottom: 40px; } }
+  /* line 35, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-hero .p-like {
+    margin-bottom: 20px;
+    display: block; }
+  /* line 39, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-hero a {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 800px;
+    font-weight: 200;
+    text-align: center;
+    color: #4a4a4a;
+    margin: 20px auto;
+    display: block;
+    opacity: 100;
+    transition: all .5s ease;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; }
+    /* line 53, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-hero a:before {
+      content: attr(data-hover);
+      display: block;
+      height: 0;
+      opacity: 0;
+      transition: all .5s ease; }
+    /* line 60, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-hero a br {
+      margin: 20px 0; }
+    /* line 63, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-hero a:hover {
+      text-decoration: none; }
+      /* line 65, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+      #about-hero a:hover [lang=en] {
+        opacity: 0;
+        transition: all .4s ease; }
+      /* line 69, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+      #about-hero a:hover:before {
+        content: attr(data-hover);
+        opacity: 100;
+        display: block; }
+
+/* line 81, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.lang-swap h1 {
+  text-transform: none !important;
+  margin-bottom: 20px; }
+
+/* line 85, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.lang-swap .p-like {
+  margin-bottom: 20px;
+  display: block;
+  color: #4a4a4a; }
+  @media (max-width: 700px) {
+    /* line 85, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    .lang-swap .p-like {
+      text-align: center; } }
+
+/* line 93, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.lang-swap .h3-like {
+  margin-top: -20px;
+  color: red; }
+
+/* line 97, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.lang-swap a {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 800px;
+  font-weight: 200;
+  color: #9B9B9B;
+  display: block;
+  opacity: 100;
+  transition: all .5s ease;
+  position: relative;
+  overflow: hidden; }
+  /* line 108, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  .lang-swap a:before {
+    content: attr(data-hover);
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition: all .5s ease; }
+  /* line 115, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  .lang-swap a br {
+    margin: 20px 0; }
+  /* line 118, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  .lang-swap a:hover {
+    text-decoration: none; }
+    /* line 120, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    .lang-swap a:hover [lang=en] {
+      opacity: 0;
+      transition: all .4s ease;
+      color: #4a4a4a; }
+    /* line 125, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    .lang-swap a:hover:before {
+      content: attr(data-hover);
+      opacity: 100;
+      display: block;
+      color: #4a4a4a; }
+
+/* line 136, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+body.about .body-blobs-wrap {
+  z-index: 1; }
+
+/* line 140, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-hero {
+  background: transparent; }
+
+/* line 144, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec1 {
+  background: transparent; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec1 span {
+    text-align: left; }
+    @media screen and (max-width: 768px) {
+      /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+      #about-sec1 span {
+        text-align: center; } }
+
+/* line 154, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec1 .avia-builder-el-last {
+  background: transparent;
+  margin-left: 5px; }
+
+/* line 159, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
 #about-sec2 {
-  transform: translate(0%, -20%); }
+  -webkit-transform: translate(-9%, -20%);
+          transform: translate(-9%, -20%);
+  z-index: 9999;
+  background: transparent; }
+  @media (max-width: 768px) {
+    /* line 159, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec2 {
+      -webkit-transform: none;
+              transform: none; } }
+  /* line 166, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec2 span {
+    text-align: center; }
 
-/* line 9, Sass/_pages/_about.scss */
+/* line 171, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
 #about-sec3 {
-  transform: translate(0%, -30%); }
+  -webkit-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
+  min-height: 500px;
+  background: transparent; }
+  @media (max-width: 768px) {
+    /* line 171, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec3 {
+      -webkit-transform: none;
+              transform: none; } }
 
-/* line 13, Sass/_pages/_about.scss */
-#about-sec3 .avia_textblock {
-  padding-top: 20%; }
+/* line 180, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec3 .entry-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 768px) {
+    /* line 180, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec3 .entry-content-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column; } }
 
-/* line 18, Sass/_pages/_about.scss */
-#about-sec3 img {
-  transform: translate(-50%, 0); }
+/* line 188, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec3 .avia-builder-el-last {
+  margin-left: 0px; }
+
+/* line 192, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec4 {
+  -webkit-transform: translate(0%, -80%);
+          transform: translate(0%, -80%);
+  min-height: 500px;
+  background: transparent; }
+  @media (max-width: 768px) {
+    /* line 192, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec4 {
+      -webkit-transform: none;
+              transform: none; } }
+  /* line 199, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec4 span {
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      /* line 199, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+      #about-sec4 span {
+        text-align: center; } }
+  @media screen and (max-width: 768px) {
+    /* line 205, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec4 h2,
+    #about-sec4 h5 {
+      text-align: center !important; } }
+
+@media (max-width: 768px) {
+  /* line 213, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec4.desktop-only {
+    display: none; } }
+
+@media (min-width: 768px) {
+  /* line 220, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec4.mobile-only {
+    display: none; } }
+
+/* line 227, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec4 .entry-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  /* line 230, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec4 .entry-content-wrapper .avia-builder-el-last {
+    margin-left: 20px; }
+
+/* line 235, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec5 {
+  -webkit-transform: translate(1%, -85%);
+          transform: translate(1%, -85%);
+  min-height: 500px;
+  background: transparent;
+  margin-bottom: -550px; }
+  @media (max-width: 768px) {
+    /* line 235, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+    #about-sec5 {
+      -webkit-transform: none;
+              transform: none;
+      margin-bottom: -50px; } }
+
+/* line 246, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec5 .entry-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top; }
+  /* line 249, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+  #about-sec5 .entry-content-wrapper .avia-builder-el-last {
+    margin-left: 20px;
+    margin-top: 20px; }
+
+/* line 255, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#after_section_6 {
+  border-top: none;
+  background: transparent; }
+
+/* line 260, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#after_section_7 {
+  border-top: none; }
+
+/* line 265, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.clearfix::before,
+.clearfix::after,
+.flex_column::before,
+.flex_column::after,
+.widget::before,
+.widget::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 275, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.page-id-12 h2 {
+  font-weight: 100;
+  text-transform: lowercase !important;
+  text-transform: capitalize !important;
+  margin-bottom: 0px; }
+
+/* line 1, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.page-id-50 .grid-content {
+  display: none; }
+
+/* line 9, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.grid-entry .inner-entry {
+  margin-right: 24px;
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 768px) {
+    /* line 9, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+    .grid-entry .inner-entry {
+      margin-right: 0; } }
+
+/* line 17, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.ajax_slide h2 {
+  visibility: hidden; }
+
+/* line 21, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+#top .avia-font-entypo-fontello,
+body .avia-font-entypo-fontello,
+html body [data-av_iconfont="entypo-fontello"]::before {
+  font-family: "entypo-fontello";
+  font-size: 49px;
+  margin-top: 10px; }
+  @media only screen and (max-width: 768px) {
+    /* line 21, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+    #top .avia-font-entypo-fontello,
+    body .avia-font-entypo-fontello,
+    html body [data-av_iconfont="entypo-fontello"]::before {
+      margin-top: 2px; } }
+
+/* line 32, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.work-page [data-av_icon]::before {
+  background-color: transparent; }
+
+/* line 36, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.work-page {
+  background-color: white; }
+  /* line 39, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+  .work-page #av_section_1 {
+    z-index: 2;
+    position: relative;
+    background-color: white; }
+  /* line 45, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+  .work-page .container {
+    z-index: 9999; }
+  /* line 49, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+  .work-page .mobile-only {
+    display: none; }
+    @media (max-width: 768px) {
+      /* line 49, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+      .work-page .mobile-only {
+        display: block; } }
+  /* line 56, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+  .work-page .desktop-only {
+    display: block; }
+    @media (max-width: 768px) {
+      /* line 56, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+      .work-page .desktop-only {
+        display: none; } }
+  @media only screen and (max-width: 768px) {
+    /* line 63, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+    .work-page #main .content {
+      padding-bottom: 20px; } }
+  /* line 69, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+  .work-page #socket {
+    display: none; }
+
+/* line 74, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_work.scss */
+.js_active .grid-image:hover {
+  opacity: 0.8 !important; }
+
+/* line 2, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_contact.scss */
+.contact-page #after_section_1 {
+  border-top: none; }
+
+/* line 5, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_contact.scss */
+.contact-page h2 {
+  margin-bottom: 50px; }
+  @media only screen and (min-device-width: 375px) {
+    /* line 5, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_contact.scss */
+    .contact-page h2 {
+      font-size: 50px; } }
+
+@media only screen and (max-width: 768px) {
+  /* line 12, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_contact.scss */
+  .contact-page .container {
+    width: 95%;
+    max-width: 100%; } }
+
+/* line 3, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_popup.scss */
+.ajax_slide h1 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 5px; }
+  @media only screen and (max-width: 768px) {
+    /* line 3, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_popup.scss */
+    .ajax_slide h1 {
+      text-align: center; } }
+
+/* line 11, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_popup.scss */
+.ajax_slide h2 {
+  text-transform: capitalize !important;
+  font-size: 45px;
+  color: #10b5e5; }
+
+/* line 20, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_popup.scss */
+.main_color .button:hover, .main_color .ajax_controlls a:hover, .main_color #submit:hover, .main_color .big_button:hover, .main_color .contentSlideControlls a:hover, .main_color #submit:hover, .main_color input[type='submit']:hover {
+  background-color: transparent; }
+
+/* line 25, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_pages/_popup.scss */
+a.avia_close {
+  background-color: transparent; }
+
+/* ------------------------ */
+/*   Blobs
+/* ------------------------ */
+/* line 4, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#canvas-body {
+  background-color: white; }
+
+/* line 10, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#canvas-body,
+#canvas-footer,
+#menu-canvas {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1; }
+
+/* line 21, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#menu-canvas {
+  height: 100vh; }
+
+/* line 25, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+.footer_color,
+.body-blobs-wrap {
+  position: relative; }
+
+/* line 30, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+.body-blobs-wrap {
+  z-index: 1; }
+
+/* line 34, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#canvas-body {
+  position: fixed;
+  height: 100vh;
+  z-index: -1; }
+
+/* line 40, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+.main_color {
+  background: transparent; }
+
+/* line 44, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#footer {
+  z-index: 1 !important; }
+
+/* line 48, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_blobs.scss */
+#footer .container {
+  position: relative; }
+
+/* ------------------------ */
+/*   Menu
+/* ------------------------ */
+/* line 14, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.blobby-menu {
+  -webkit-filter: url("#shadowed-goo");
+          filter: url("#shadowed-goo"); }
+  /* line 21, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .avia-safari .blobby-menu {
+    -webkit-filter: none;
+            filter: none; }
+
+/* line 27, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+a {
+  color: #fff;
+  z-index: 9999; }
+
+/* line 32, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+#top .menu-open[type="checkbox"] {
+  display: none; }
+
+/* line 37, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.blobby-menu {
+  position: absolute;
+  right: 20px;
+  padding-top: 20px;
+  padding: 20px 10px 0;
+  width: 380px;
+  max-width: 100%;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+  z-index: 9999;
+  top: 10px;
+  pointer-events: none; }
+  @media (max-width: 768px) {
+    /* line 37, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+    .blobby-menu {
+      right: 0px; } }
+
+/* line 60, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.blob {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 80px;
+  z-index: -1;
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  /* line 78, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(3) {
+    transition-duration: 160ms; }
+  /* line 78, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(4) {
+    transition-duration: 220ms; }
+  /* line 78, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(5) {
+    transition-duration: 280ms; }
+  /* line 78, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(6) {
+    transition-duration: 340ms; }
+  /* line 78, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(7) {
+    transition-duration: 400ms; }
+  /* line 82, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(3), .blob:nth-child(4) {
+    top: 40px; }
+  /* line 87, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .blob:nth-child(5), .blob:nth-child(6) {
+    top: 60px; }
+
+/* line 97, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.menu-open-button {
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: tranparent;
+  color: #fff;
+  opacity: 0;
+  pointer-events: auto; }
+
+/* line 115, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.menu-open:checked + .menu-open-button {
+  top: 70%;
+  left: 50%;
+  margin-left: -40px;
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 0.5s; }
+  @media (min-width: 543px) {
+    /* line 115, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+    .menu-open:checked + .menu-open-button {
+      margin-left: -26px; } }
+
+/* line 133, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.menu-open:checked ~ .blob {
+  background-image: radial-gradient(to bottom, #bef456 0%, #6ec05c 100%);
+  background-image: -webkit-radial-gradient(top, #bef456 0%, #6ec05c 100%);
+  width: 100px;
+  height: 100px;
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33); }
+  /* line 138, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .avia-android .menu-open:checked ~ .blob {
+    background: #c8fc70; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(3) {
+    transition-duration: 580ms; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(4) {
+    transition-duration: 660ms; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(5) {
+    transition-duration: 740ms; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(6) {
+    transition-duration: 820ms; }
+  /* line 146, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(7) {
+    transition-duration: 900ms; }
+  /* line 150, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    right: 100px;
+    top: -100px; }
+  /* line 156, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(6) {
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    right: 50%;
+    margin-right: -75px; }
+    @media (min-width: 543px) {
+      /* line 156, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+      .menu-open:checked ~ .blob:nth-child(6) {
+        right: 100px;
+        margin-right: 0; } }
+  /* line 168, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .blob:nth-child(3) {
+    width: 240px;
+    height: 240px;
+    right: -50px;
+    top: -50px; }
+
+/* line 179, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.main-menu-wrap {
+  opacity: 0;
+  transition: opacity .2s;
+  transition-delay: 0s;
+  pointer-events: auto; }
+  /* line 184, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .main-menu-wrap .avia-bullet {
+    display: none; }
+
+/* line 190, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.menu-open:checked ~ .main-menu-wrap {
+  opacity: 1;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s; }
+
+/* line 198, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+#main-menu {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  margin: 0;
+  display: none; }
+  /* line 205, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .menu-open:checked ~ .main-menu-wrap #main-menu {
+    display: block; }
+  /* line 209, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  #main-menu li {
+    display: inline-block;
+    padding: 10px 10px;
+    text-transform: uppercase; }
+
+/* line 218, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.avia-msie-9 .menu-open:checked ~ .blob {
+  display: none; }
+
+/* line 222, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.avia-msie-9 #main-menu li {
+  background-color: #c8fc70;
+  border-radius: 20px; }
+
+/* line 226, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+.avia-msie-9 .menu-open:checked + .menu-open-button {
+  top: 120px; }
+  /* line 228, Users/BIKLOPS/Local Sites/primary-color-music/app/public/wp-content/themes/PCM/Sass/_partials/_menu.scss */
+  .avia-msie-9 .menu-open:checked + .menu-open-button svg path {
+    stroke: gray; }
+/*# sourceMappingURL=style.css.map */

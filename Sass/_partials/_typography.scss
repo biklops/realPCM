@@ -1,20 +1,49 @@
-// Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
+// Font-Face 
+
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url('HelveticaNeueUltraLight.ttf') format(truetype);
+
+}
+
+// Font sizes
+body {
+    font-size: $unit;
+    line-height: $unit*1.5;
+}
+
 // Base Font
-$base-font-family: haptic-medium,
+$base-font-family: 
+"HelveticaNeue-Light",
+"Helvetica Neue Light",
+"Helvetica Neue",
+Helvetica,
+Arial,
+"Lucida Grande",
 sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 18px;
-$base-line-height: 1.4;
-//Fonts
-$header-font: haptic-medium;
+
+// Header Fonts
+$header-font:"HelveticaNeueUltraLight",
+"HelveticaNeue-Ultra-Light",
+"Helvetica Neue Ultra Light",
+"HelveticaNeue",
+"Helvetica Neue",
+'TeXGyreHerosRegular',
+"Arial",
+sans-serif; 
+
+
+.template-page .entry-content-wrapper h1,
+.template-page .entry-content-wrapper h2 {
+    letter-spacing: -1px;
+    text-transform: none;
+}
+
 //Body
 p {
     color: $text-grey;
-    font-size: $base-font-size;
     font-family: $base-font-family;
+    font-weight: $base-font-weight;
 }
 
 //Headers
@@ -22,14 +51,47 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-    font-family: $header-font, $base-font-family;
+h5,
+.main_color h2,
+.main_color h3,
+.main_color h4,
+.main_color h5 {
+    font-family: $header-font;
+    font-weight: $header-font-weight;
+    -webkit-font-smoothing: antialiased;
+    color: $blue;
+}
+
+h1 {
+    @media (max-width: $pad-size) {
+        margin-top: $unit*2;
+    }
 }
 
 .main_color h1 {
     font-family: $header-font, $base-font-family;
     color: #10B5E5;
-    font-size: 3rem;
+    letter-spacing: -2px;
+    font-size: $unit*3.25;
+    line-height: $unit*3.25;
+    text-transform: lowercase !important;
+    text-transform: capitalize !important;
+    margin-bottom: $unit*2;
+}
+
+h2 {
+    font-size: $unit*3;
+    line-height: $unit*2.5;
+    margin-bottom: $unit*.25 !important;
+}
+
+h3 {
+    font-size: $unit*1.25;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: $unit*1;
 }
 
 //Special Sections

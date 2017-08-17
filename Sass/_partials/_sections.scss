@@ -1,9 +1,264 @@
+//** This is a page full of re-usable sections
+
+/*
+*   Logo
+*/
+
+div .logo {
+    float: left;
+    left: 0;
+    margin-top: $unit;
+    margin-left: $unit*2;
+    max-width: 239px;
+    position: absolute;
+    z-index: 9999;
+    @media only screen and (max-width: 767px) {
+        margin-top: 15px;
+        width: 50% !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+#header {
+    height: $unit*7;
+}
+
+
+/*
+*   Responsive Container 
+*/
+
+.container {
+    @media only screen and (min-width: $phone-size) {
+    padding-top: $unit*4;} 
+}
+
+
+/*
+*   Reel
+*/
+
+.av-video-service-youtube .av-click-overlay {
+    display: none;
+}
+
+.av-click-overlay {
+    z-index: 0;
+}
+
+.ytp-large-play-button {
+    display: none !important;
+}
+
+// Room for mobile nav and logo
+#main .content {
+    @media only screen and (min-width: 0px) and (max-width: 900px) {
+        padding-top: 0px;
+    }
+}
+
 #cta-strip {
     background-color: $grey;
     color: white;
 }
 
-#cta-strip p{
-
+#cta-strip p {
     color: white;
+}
+
+// Portfolio Popups
+.ajax_previous,
+.ajax_next {
+    display: none !important;
+}
+
+.ajax_controlls a {
+    width: $unit*6;
+    height: $unit*6-2;
+    margin-top: 1px;
+}
+
+.avia_close {
+    background: transparent;
+    border: none !important;
+}
+
+[data-av_icon]::before {
+    background-color: #f8f8f8;
+    color: $grey;
+    width: $unit*2;
+    width: $unit*6;
+    height: $unit*6;
+    display: block;
+    font-size: $unit*3;
+    padding-top: $unit*1.5;
+}
+
+div.avia-popup .mfp-close:hover {
+    border: none!important;
+}
+
+// Remove Scroll-To-Top
+#scroll-top-link {
+    display: none;
+}
+
+// Stupid Ass Image Overlay in Enfold 
+.image-overlay {
+    visibility: hidden;
+}
+
+.avia_transform a:hover .image-overlay {
+    opacity: 0.2 !important;
+}
+
+.image-overlay .image-overlay-inside:before {
+    display: none;
+}
+
+.html_stretched #wrap_all {
+    background-color: transparent !important;
+}
+
+#main,
+.avia-msie-8 #header.av_header_sticky_disabled {
+    background-color: transparent;
+}
+
+
+/*
+* LOCATIONS BLOCKS
+*/
+
+#locations {
+    @include flex;
+    height: $unit*27;
+    @media only screen and (max-width: 900px) {
+        height: auto;
+        display: block;
+    }
+    .avia-button {
+        min-width: 250px;
+        background-color: transparent;
+        @include btn;
+    }
+}
+
+#locations .flex_cell {
+    @include flex;
+    display: flex !important;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: $unit*27;
+    background-size: cover !important;
+    border: 8px solid $blue;
+    float: left;
+    &.kc {
+        border-right: 2px solid $blue;
+    }
+    .flex_cell_inner {
+        align-self: center;
+    }
+}
+
+
+/*
+// 'NASCAR' Blocks
+*/
+
+#top .avia-logo-grid .slide-entry-wrap {
+    margin-bottom: $unit*.5;
+}
+
+.logos {
+    h3 {
+        text-align: center;
+        margin-bottom: $unit*2;
+        font-weight: $light;
+    }
+    @media (max-width: $phone-size) {
+        transform: none;
+    }
+    .slide-entry-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        @media (max-width: $phone-size) {
+            width: 100%;
+        }
+        .slide-entry {
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $phone-size) {
+                box-sizing: border-box;
+                display: flex;
+                flex: 1 1 25%;
+                margin: 0 10px 20px !important;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                @include flex;
+            }
+        }
+    }
+}
+
+#top .avia-smallarrow-slider .slide-image,
+#top .avia-logo-element-container img {
+    margin: 0 auto;
+    max-width: 100px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+}
+
+
+/*
+// Pagination on Portfolio items
+*/
+
+#top .pagination .current,
+#top .pagination a,
+#top .fullsize .template-blog .pagination a {
+    float: left;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    border-radius: 100px;
+    margin-right: .5*$unit;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    color: $text-grey;
+    &:hover { 
+        background-color: $blue;
+        color: white; 
+    }
+}
+
+.main_color .rounded-container, #top .main_color .pagination a:hover, .main_color .small-preview, .main_color .fallback-post-type-icon {
+    &:hover { 
+        background-color: $blue;
+        color: white;
+    }
+}
+
+#top .pagination .current {
+    background: $grey;
+    color: white;
+}
+
+
+/*
+*   Client Preview Pages logo overlap fix
+*/
+
+.client-preview .container {
+    padding-top: $unit*6;
 }

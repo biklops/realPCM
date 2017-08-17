@@ -1,0 +1,76 @@
+.page-id-50 .grid-content {
+  display: none;
+}
+
+.entry-content-header {
+  // visibility: hidden !important;
+}
+
+.grid-entry .inner-entry {
+  margin-right: $unit+4;
+  margin-bottom: $unit+4;
+  @media only screen and (max-width: $phone-size) {
+    margin-right: 0;
+  }
+}
+
+.ajax_slide h2 {
+  visibility: hidden;
+}
+
+#top .avia-font-entypo-fontello,
+body .avia-font-entypo-fontello,
+html body [data-av_iconfont="entypo-fontello"]::before {
+  font-family: "entypo-fontello";
+  font-size: 49px;
+  margin-top: $unit*.5;
+  @media only screen and (max-width: $phone-size) {
+    margin-top: 2px;
+  }
+}
+
+.work-page [data-av_icon]::before {
+  background-color: transparent;
+}
+
+.work-page {
+  background-color: white;
+
+  #av_section_1 {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+  }
+
+  .container {
+    z-index: 9999;
+  }
+
+  .mobile-only {
+    display: none;
+    @media (max-width: $phone-size) {
+      display: block;
+    }
+  }
+
+  .desktop-only {
+    display: block;
+    @media (max-width: $phone-size) {
+      display: none;
+    }
+  }
+
+  #main .content {
+    @media only screen and (max-width: $phone-size) {
+      padding-bottom: $unit;
+    }
+  }
+
+  #socket {
+    display: none;
+  }
+}
+// Hover state for portfolio images
+.js_active .grid-image:hover {
+  opacity: 0.8 !important;
+}

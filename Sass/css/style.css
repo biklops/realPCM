@@ -1,0 +1,261 @@
+/*
+Theme Name: PCM
+Theme URI: http://www.biklops.com
+Author: BKLOPS
+Author URI: http://biklops.com
+Description: The world is but an illusion
+Template: Enfold
+Version: 1.0
+Text Domain: pcm
+*/
+/* line 5, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_base.scss */
+div .logo {
+  float: left;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  max-width: 150px; }
+
+/* line 14, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_base.scss */
+.html_stretched #wrap_all {
+  background-color: transparent !important; }
+
+/* line 18, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_base.scss */
+#main,
+.avia-msie-8 #header.av_header_sticky_disabled {
+  background-color: transparent; }
+
+/* mixin for font sizing */
+/* line 1, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */ }
+
+/* line 37, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+p {
+  color: #4A4A4A;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: normal; }
+
+/* line 45, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+#about-hero p {
+  color: #9B9B9B; }
+
+/* line 50, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  color: #4A4A4A; }
+
+/* line 60, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+.main_color h1 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #10B5E5;
+  font-size: 60px;
+  font-size: 6rem;
+  text-transform: lowercase !important;
+  text-transform: capitalize !important; }
+
+/* line 68, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h2 {
+  font-size: 52.5px;
+  font-size: 5.25rem; }
+
+/* line 72, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h3 {
+  font-size: 40px;
+  font-size: 4rem; }
+
+/* line 76, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+h5 {
+  @inlcude font-size(3)
+    font-weight: $light; }
+
+/* line 83, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_typography.scss */
+#cta-strip p {
+  color: white;
+  font-size: 1.85rem; }
+
+@media only screen and (max-width: 2600px) {
+  /* line 2, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+  .html_mobile_menu_tablet .container #advanced_menu_toggle,
+  .html_mobile_menu_tablet #advanced_menu_hide {
+    display: block; }
+  /* line 6, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+  .responsive .av_mobile_menu_tablet .main_menu {
+    display: none; }
+  /* line 9, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+  .html_mobile_menu_tablet #mobile-advanced {
+    display: block;
+    width: 20%;
+    right: -20%; } }
+
+@media only screen and (min-width: 1024px) {
+  /* line 17, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+  nav.main_menu {
+    display: none !important; }
+  /* line 20, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_nav.scss */
+  #advanced_menu_toggle,
+  #advanced_menu_hide {
+    display: block !important; } }
+
+/* line 5, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footer {
+  background: #1ca650;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
+  background: linear-gradient(135deg, #1ca650 0%, #a5cf3a 50%, #fde92d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -9999;
+  position: relative;
+  bottom: 0;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none; }
+
+/* line 16, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 121px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: auto;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 30, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#footer .container p {
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: normal; }
+
+/* line 37, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+#socket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #313131;
+  color: white;
+  height: 121px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 100;
+  bottom: 0px;
+  z-index: -9998;
+  width: 100%;
+  position: fixed;
+  border-top: rgba(174, 255, 114, 0.7) 1px solid; }
+
+/* line 52, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.footer_color a {
+  color: white !important;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: normal;
+  display: block; }
+
+/* line 60, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_layout/_footer.scss */
+.footer_color section,
+.footer_color span,
+#top .footer_color .pullquote_boxed,
+.responsive #top .footer_color .avia-testimonial,
+.responsive #top.avia-blank #main .footer_color.container_wrap:first-child,
+#top .footer_color.fullsize .template-blog .post_delimiter,
+.footer_color .related_posts.av-related-style-full a {
+  overflow: visible !important; }
+
+/* line 1, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#cta-strip {
+  background-color: #4C4C4C;
+  color: white; }
+
+/* line 6, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_partials/_sections.scss */
+#cta-strip p {
+  color: white; }
+
+/* line 1, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.about-hero p {
+  max-width: 1080px; }
+
+/* line 5, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec1 .avia-builder-el-last {
+  margin-left: 5px; }
+
+/* line 10, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec2 {
+  -webkit-transform: translate(-9%, -20%);
+          transform: translate(-9%, -20%);
+  z-index: 9999;
+  background: transparent; }
+
+/* line 16, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec3 {
+  -webkit-transform: translate(-10%, -38%);
+          transform: translate(-10%, -38%);
+  min-height: 500px; }
+
+/* line 21, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec3 .avia_textblock {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+/* line 25, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+#about-sec3 .avia-builder-el-last {
+  margin-left: 5px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 33, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.clearfix::before,
+.clearfix::after,
+.flex_column::before,
+.flex_column::after,
+.widget::before,
+.widget::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 46, Volumes/Giganto/Dropbox/Sites/www.pcm.dev/wp-content/themes/PCM/Sass/_pages/_about.scss */
+.page-id-12 h2 {
+  font-weight: 100;
+  text-transform: lowercase !important;
+  text-transform: capitalize !important;
+  margin-bottom: 0px; }

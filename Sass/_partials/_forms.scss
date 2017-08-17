@@ -1,0 +1,82 @@
+#top form {
+    border: 1px solid;
+    border-color: $text-grey;
+    margin-bottom: $unit*10;
+    padding: $unit*1.5;
+    // @media only screen and (min-device-width: 375px) {
+        @media only screen and (max-width: $phone-size) {
+        padding: $unit;
+        max-width: 100%;
+        min-width: 100%;
+        margin-bottom: $unit;
+    }
+}
+
+#top fieldset {
+    margin-bottom: 0px;
+    max-width: 100%;
+     @media only screen and (max-width: $phone-size) {
+        min-width: 100%;
+    }
+}
+
+#top .avia_ajax_form .text_input,
+#top .avia_ajax_form .select,
+#top .avia_ajax_form .text_area {
+    border-radius: 0px;
+}
+
+#top .main_color .input-text,
+#top .main_color input[type="text"],
+#top .main_color input[type="input"],
+#top .main_color input[type="password"],
+#top .main_color input[type="email"],
+#top .main_color input[type="number"],
+#top .main_color input[type="url"],
+#top .main_color input[type="tel"],
+#top .main_color input[type="search"],
+#top .main_color textarea,
+#top .main_color select {
+    background-color: white;
+    border-color: $text-grey;
+    color: $text-grey;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-page form {
+    width: $unit*30;
+    max-width: 80%;
+    margin: 0 auto;
+    @media only screen and (min-device-width: 375px) {
+        max-width: 100%;
+    }
+    input {
+        // font-weight: $light !important;
+        color: $sub-head-grey !important;
+    }
+    input.button {
+        margin: 0 auto;
+        display: block;
+        width: $unit*12;
+        background-color: $blue;
+        border: none;
+        color: white !important;
+        font-size: $unit*2;
+        letter-spacing: -1px;
+        padding: $unit*.5;
+        font-weight: $ultralight;
+        max-width: 80%;
+
+        @media only screen and (max-width: $phone-size) {
+            margin: $unit 0 0;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+        &:hover {
+            opacity: .70;
+            background-color: $blue;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.contact-page {
+    #after_section_1 {
+        border-top: none; 
+        }
+    h2 {
+            margin-bottom: $unit*2.5;
+            @media only screen and (min-device-width: 375px) {
+                font-size: $unit*2.5;
+            }
+        }
+      
+     .container {
+         @media only screen and (max-width: $phone-size) {
+            width: 95%;
+            max-width: 100%;
+        }  
+     }  
+}

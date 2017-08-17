@@ -1,0 +1,232 @@
+/* ------------------------ */
+/*   Menu
+/* ------------------------ */
+
+//vars
+$blob-start-color: gray;
+$blob-end-color: #c8fc70;
+$pi:3.14;
+//config
+$menu-items:5;
+$open-distance:115px;
+$opening-angle:$pi - .2;
+
+%goo {
+  filter: url('#shadowed-goo');
+  // debug
+  // background:rgba(255,0,0,0.2);
+
+  // Remove connectedness of dots for all safari browsers and
+  // it glitches
+  .avia-safari & {
+    filter: none;
+  }
+
+}
+
+a {
+  color: #fff;
+  z-index: 9999;
+}
+
+#top .menu-open[type="checkbox"] { // # required to override styling for #top input in base.css
+  display: none;
+}
+
+// Complete menu box
+.blobby-menu {
+  @extend %goo;
+  position: absolute;
+  right: 20px;
+  padding-top: 20px;
+  padding: 20px 10px 0;
+  width: 380px;
+  max-width: 100%;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+  z-index: 9999;
+  top: 10px;
+  pointer-events: none;
+  @media (max-width: $phone-size) {
+        right: 0px;
+    }
+
+}
+
+
+// Each blob
+.blob {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 80px;
+  z-index: -1;
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  // Reverse animation
+  @for $i from 1 through $menu-items {
+    &:nth-child(#{$i+2}) {
+      transition-duration: 100ms+(60ms*($i)); // In speed
+    }
+  }
+  &:nth-child(3),
+  &:nth-child(4) {
+    // background-color: purple;
+    top: 40px;
+  }
+  &:nth-child(5),
+  &:nth-child(6) {
+    // background-color: pink;
+    top: 60px;
+  }
+  &:nth-child(5) {
+    // background-color: blue;
+  }
+}
+
+.menu-open-button {
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  text-align: center;
+  line-height: 80px;
+  z-index: 2;
+  cursor: pointer;
+  background-color: tranparent;
+  color: #fff;
+  opacity: 0;
+  pointer-events: auto;
+}
+
+// Opened menu
+.menu-open:checked+.menu-open-button {
+  top: 70%;
+  left: 50%;
+
+  margin-left: -40px;
+
+  @media (min-width: 543px) {
+    margin-left: -26px;
+  }
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 0.5s;
+
+
+}
+
+
+// Blob when opened
+.menu-open:checked~.blob {
+
+  background-image: radial-gradient(to bottom, #bef456 0%, #6ec05c 100%);
+  background-image: -webkit-radial-gradient(top, #bef456 0%, #6ec05c 100%);
+
+  .avia-android & {
+    background: $blob-end-color;
+  }
+
+  width: 100px;
+  height: 100px;
+  transition-timing-function: cubic-bezier(0.935, 0.000, 0.340, 1.330);
+  @for $i from 1 through $menu-items {
+    &:nth-child(#{$i+2}) {
+      transition-duration: 500ms+(80ms*$i);
+    }
+  }
+  &:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    right: 100px;
+    top: -100px;
+  }
+  &:nth-child(6) {
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    right: 50%;
+    margin-right: -75px;
+
+    @media (min-width: 543px) {
+      right: 100px;
+      margin-right: 0;
+    }
+  }
+  &:nth-child(3) {
+    width: 240px;
+    height: 240px;
+    right: -50px;
+    top: -50px;
+  }
+  &:nth-child(4) {
+    //    transform: scale(3)
+  }
+}
+
+.main-menu-wrap {
+  opacity: 0;
+  transition: opacity .2s;
+  transition-delay: 0s;
+  pointer-events: auto;
+  .avia-bullet {
+    display: none;
+  }
+}
+
+// Menu wrap when opened
+.menu-open:checked~.main-menu-wrap {
+  opacity: 1;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+}
+
+#main-menu {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  margin: 0;
+  display: none;
+
+  .menu-open:checked~.main-menu-wrap & {
+    display: block;
+  }
+
+  li {
+    display: inline-block;
+    padding: 10px 10px;
+    text-transform: uppercase;
+  }
+}
+
+.avia-msie-9 {
+
+  .menu-open:checked~.blob {
+    display: none;
+  }
+
+  #main-menu li {
+    background-color: $blob-end-color;
+    border-radius: 20px;
+  }
+  .menu-open:checked+.menu-open-button {
+    top: 120px;
+    svg path {
+      stroke: gray;
+    }
+  }
+}

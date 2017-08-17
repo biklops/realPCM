@@ -1,17 +1,29 @@
-div .logo {
-    float: left;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-    margin-top: 20px;
-    max-width: 150px;
+*{
+    box-sizing: border-box;
 }
 
-.html_stretched #wrap_all {
-    background-color: transparent !important;
+// Scale
+
+$unit: 20px;
+
+// Flex
+
+// FLEXBOX
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }
 
-#main,
-.avia-msie-8 #header.av_header_sticky_disabled {
-    background-color: transparent;
+// BOX MODEL
+
+// HTML 100% height
+
+html {
+    height: 100%; 
 }
+
+

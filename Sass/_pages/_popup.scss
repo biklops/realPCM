@@ -1,0 +1,27 @@
+.ajax_slide {
+
+    h1 {
+        font-size: $unit*2;
+        margin-top: $unit*2;
+        margin-bottom: $unit*.25;
+         @media only screen and (max-width: $phone-size) {
+            text-align: center;
+        }
+    }
+    h2 {
+        text-transform: capitalize !important;
+        font-size: $unit*2.25;
+        color:$blue;
+
+    }
+
+}
+
+.main_color .button:hover, .main_color .ajax_controlls a:hover, .main_color #submit:hover, .main_color .big_button:hover, .main_color .contentSlideControlls a:hover, .main_color #submit:hover, .main_color input[type='submit']:hover {
+    background-color: transparent;
+
+}
+
+a.avia_close {
+    background-color: transparent;
+}

@@ -8,3 +8,44 @@
     background: linear-gradient(135deg, rgba(28, 166, 80, 1) 0%, rgba(165, 207, 58, 1) 50%, rgba(253, 233, 45, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin btn ($color: white) {
+    font-size: $unit*2;
+    border: 4px solid $color !important;
+    border-radius: 0px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+text-shadow: 0 2px 2px 0 rgba(0,0,0,0.70) !important;
+
+        span {
+            text-shadow: 1px 2px rgba(0,0,0,0.50) !important;
+            font-weight: $light;
+        }
+}
+
+// mixin for font sizing 
+
+@mixin fontsize($size:1.6, $line: $size * 1.5) {
+    font-size: ($size * 10) + px;
+    line-height: ($line * 10) + px;
+    font-size: $size + rem;
+    line-height: $line + rem;
+}
+
+// Hide Stuff
+
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute; 
+    width: 1px;
+}
+

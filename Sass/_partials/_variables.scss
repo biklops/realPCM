@@ -1,2 +1,25 @@
-$grey: #4C4C4C;
-$text-grey: #4A4A4A;
+// Font weights
+
+$ultralight: 100;
+$light: 200;
+$regular: 300;
+$bold: 600;
+$base-font-weight: $regular;
+$header-font-weight: 500;
+
+//Colors
+
+$grey: rgba(74,74,74,1);
+$text-grey: rgba(74,74,74,1);
+$sub-head-grey: #9B9B9B;
+$blue: rgba(16,181,229,1);
+
+
+// Responsive Screen Sizes
+
+$phone-size: 768px;
+$screen-xs-max: ($phone-size - 1);
+$pad-size: 992px;
+$screen-sm-max: ($pad-size - 1);
+$screen-lg-min: 1200px;
+$desktop-size: ($screen-lg-min - 1); 

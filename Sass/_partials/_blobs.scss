@@ -1,0 +1,51 @@
+/* ------------------------ */
+/*   Blobs
+/* ------------------------ */
+#canvas-body,
+ {
+background-color: white;
+}
+
+
+#canvas-body,
+#canvas-footer,
+#menu-canvas {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#menu-canvas {
+  height: 100vh;
+}
+
+.footer_color,
+.body-blobs-wrap {
+  position: relative;
+}
+
+.body-blobs-wrap {
+  z-index: 1;
+}
+ 
+#canvas-body {
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+
+.main_color {
+  background: transparent;
+}
+
+#footer {
+  z-index: 1 !important;
+}
+
+#footer .container {
+  position: relative;
+
+}
