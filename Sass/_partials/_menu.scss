@@ -214,6 +214,11 @@ a {
     padding: 10px 10px;
     text-transform: uppercase;
   }
+
+  // Hide enfold folder icon
+  .av-burger-menu-main {
+    display: none;
+  }
 }
 
 .avia-msie-9 {
