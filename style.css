@@ -1488,19 +1488,22 @@ a {
     display: inline-block;
     padding: 10px 10px;
     text-transform: uppercase; }
+  /* line 219, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
+  #main-menu .av-burger-menu-main {
+    display: none; }
 
-/* line 221, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
+/* line 226, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
 .avia-msie-9 .menu-open:checked ~ .blob {
   display: none; }
 
-/* line 225, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
+/* line 230, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
 .avia-msie-9 #main-menu li {
   background-color: #c8fc70;
   border-radius: 20px; }
 
-/* line 229, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
+/* line 234, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
 .avia-msie-9 .menu-open:checked + .menu-open-button {
   top: 120px; }
-  /* line 231, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
+  /* line 236, Users/zack/Local Sites/pcm/app/public/wp-content/themes/pcm/Sass/_partials/_menu.scss */
   .avia-msie-9 .menu-open:checked + .menu-open-button svg path {
     stroke: gray; }
